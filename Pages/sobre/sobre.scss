@@ -1,0 +1,164 @@
+@import '../../config/variables';
+@import '../../config/mixins';
+
+body {
+    background-color: $bg-color;
+}
+
+header {
+    width: 20vw;
+    height: 100vh;
+    background-color: $bg-color;
+    color: $text-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+
+    #close {
+        display: none;
+    }
+
+    .headerBrand {
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: unset;
+        }
+
+        p {
+            //      font-family: 'Dawning of a New Day', cursive;
+            text-transform: uppercase;
+            font-family: 'Homemade Apple', cursive;
+            font-size: 4rem;
+        }
+    }
+
+    .menuItems {
+        font-family: bebas neue;
+        margin: 8rem 0;
+
+        a {
+            color: unset;
+            text-decoration: none;
+        }
+
+        ul {
+            padding: 0 2rem;
+            font-size: 1.5rem;
+
+
+            li {
+                list-style: none;
+                margin: 1.5rem 0;
+                padding: 0.3rem;
+                transition: 0.5s;
+
+                span {
+                    font-size: 1rem;
+                }
+
+                ul {
+
+                    a {
+                        color: unset;
+                        text-decoration: none;
+                    }
+
+                    li:hover {
+                        background-color: $accessories-color;
+
+                    }
+                }
+
+                .content {
+                    display: none;
+                }
+            }
+
+            li:hover {
+                background-color: $spans-color;
+                animation: headShake;
+                animation-duration: 1s;
+
+            }
+
+        }
+    }
+
+    .socialMedia {
+        ul {
+            li {
+                list-style: none;
+
+            }
+        }
+
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: -10px;
+
+        a {
+            text-decoration: none;
+            color: unset;
+        }
+    }
+}
+
+main {
+    width: 80%;
+    float: right;
+
+    .mainTitle {
+        @include flexCenter;
+        font-size: 2rem;
+        font-family: bebas neue;
+        letter-spacing: 2px;
+        color: $text-color;
+    }
+
+    article {
+        @include flexCenter;
+        flex-direction: column;
+        text-align: center;
+
+        mark {
+            font-size: 1.3rem;
+            font-family: bebas neue;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-family: mohave;
+            color: $text-color;
+            width: 65%;
+        }
+    }
+}
+
+@media only screen and (max-width:700px) {
+    header {
+        top: 20px;
+        width: 100vw;
+        z-index: 2;
+        //ocultado o menu 
+        //menu responsivo para 700px
+        display: none;
+
+        .headerBrand {
+            display: flex;
+            justify-content: center;
+        }
+
+        #close {
+            display: block;
+            position: absolute;
+            right: 50px;
+        }
+    }
+    main{
+        width: 100%;
+        text-align: center;
+    }
+}

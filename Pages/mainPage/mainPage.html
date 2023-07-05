@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='author' content='Gabriel Aroucas | Web Developper'>
+    <meta name="description" content="This is my portifolio, wellcome !">
+    <meta name="keywords"
+        content="portifolio,website,gabriel,aroucas,games,landing page,applications,articles,about gabriel">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Pages/mainPage/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
+        integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=='
+        crossorigin='anonymous' referrerpolicy='no-referrer' />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="/js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Gabriel Aroucas | Portifólio </title>
+</head>
+
+<body>
+    <header>
+        <div class="headerBrand">
+            <a href="mainPage.html">
+                <p>arcs</p>
+            </a>
+            <p id="close">&times;</p>
+        </div>
+        <div class="menuItems"> 
+            <ul>
+                <li class="projects">Projetos Concluídos <span><i class="fas fa-angle-down"></i></span>
+                    <ul class="content">
+                        <a href="../projetosConcluidos/landingPages/LandingPages.html   ">
+                            <li>Landing Pages</li>
+                        </a>
+                        <a href="../projetosConcluidos/gamesWeb/games.html">
+                            <li>Games</li>
+                        </a>
+                        <a href="../projetosConcluidos/landingPages/LandingPages.html">
+                            <li>Keygens</li>
+                        </a>
+                        <a href="../projetosConcluidos/challenges/challenges.html">
+                            <li>Web Challenges</li>
+                        </a>
+                        <a href="../projetosConcluidos/aplicativos/aplicativos.html ">
+                            <li>Aplicativos</li>
+                        </a>
+                    </ul>
+                </li>
+                <a href="../projetosFuturos/projetosFuturos.html">
+                <li id="projectsProgress">Projetos Futuros</li>
+                </a>
+                <a href="../sobre/sobre.html">
+                    <li>Sobre mim</li>
+                </a>
+                <a href="../contato/contato.html">
+                    <li>Contato</li>
+                </a>
+            </ul>
+        </div>
+        <div class="socialMedia">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/gabrielaroucas/"> <i class="fab fa-linkedin"></i> </a>
+                    <a href="https://github.com/Gabriel-Aroucas?tab=repositories"> <i class="fab fa-github"></i></a>
+                    <i class="gmail fas fa-envelope"></i>
+                    <a href="#"> <i class="fas fa-phone"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <i id="bars" class="fas fa-bars"></i>
+
+    <div class="adversament">
+    </div>
+
+    <main>
+        <div class="mainTitle">
+            <h1>Bem vind<span id="gender"></span> ,<span id="visitorName">${name}</span> <span>!</span> <br> Veja abaixo meus projetos separados
+                por categoria</h1>
+            <a href="#secondaryTitle"><i class="fas fa-circle-play"></i></a>
+        </div>
+    </main>
+
+    <section class="secondaryTitle">
+        <p id="secondaryTitle">Projetos Recentes</p>
+        <div class="mark">
+            <mark>2023</mark>
+        </div>
+    </section>
+
+    <section class="emphasisImages">
+        <div class="card">
+            <div class="src">
+                <a href="../projetosConcluidos/gamesWeb/games.html"> <img src="/assets/games.jpg" width="300px"
+                        height="280px" alt=""> </a>
+            </div>
+            <div class="content">
+                <h2>Jogos</h2>
+                <div class="alt">
+                    <i>Single and Multiplayer</i>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="src">
+                <a href="../projetosConcluidos/landingPages/LandingPages.html"> <img src="/assets/landing.jpg" width="300px"
+                        height="280px" alt=""> </a>
+            </div>
+            <div class="content">
+                <h2>Landing Pages</h2>
+                <div class="alt">
+                    <i>websites e paginas simples</i>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="src">
+                <a href="../projetosConcluidos/aplicativos/aplicativos.html"> <img src="/assets/webapp.jpg" width="300px"
+                        height="280px" alt=""></a>
+            </div>
+            <div class="content">
+                <h2>Aplicativos</h2>
+                <div class="alt">
+                    <i>Utilitários</i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="terciaryTitle">
+        <div class="mark">
+            <mark>Info</mark>
+        </div>
+    </section>
+
+    <section class="emphasisArticles">
+        <div class="card">
+            <div class="src">
+              <a href="/Pages/projetosFuturos/projetosFuturos.html">  <img src="/assets/settings.jpg" width="300px" height="300px" alt=""></a>
+            </div>
+            <span>Projetos futuros</span>
+            <div class="content">
+                <h2>Leia um artigo sobre meus planos e projetos futuros</h2>
+                <div class="alt">
+                    <i>Gabriel Aroucas</i>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="src">
+                <a href="/Pages/sobre/sobre.html"><img src="/assets/about.jpg" width="300px" height="300px" alt=""></a>
+            </div>
+            <span>Sobre</span>
+            <div class="content">
+                <h2>Leia um pouco sobre quem é Gabriel Aroucas</h2>
+                <div class="alt">
+                    <i>Gabriel Aroucas</i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <form action="https://formspree.io/f/xwkjyzqv" method="POST">
+            <h1>Precisa que eu entre em contato ?</h1>
+            <div class="fieldInput">
+                <p>Email</p>
+                <input type="email" name="email" required>
+                <button type="submit">Solicitar</button>
+            </div>
+        </form>
+
+        <div class="socialMedia">
+            <ul>
+                <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <i class="fas fa-envelope"></i>
+                    <a href="#"><i class="fas fa-phone"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="credtis">
+            Gabriel Aroucas &copy; 2023
+        </div>
+
+    </footer>
+</body>
+
+</html>

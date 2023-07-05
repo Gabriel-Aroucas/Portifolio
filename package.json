@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jquery": "^3.6.4",
+    "typed": "^10.0.0-beta.2"
+  }
+}

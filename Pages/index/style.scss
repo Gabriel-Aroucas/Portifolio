@@ -1,0 +1,43 @@
+@import '../../config/variables';
+
+body{
+    background-color: $bg-color;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+.title{
+    display: flex;
+    align-items: center;
+    font-size: 7rem;
+}
+h1{
+    font-family: bebas neue;
+    font-size: 5rem;
+}
+h2{
+    font-family: mohave;
+    font-weight: bold;
+    color: $bg-color;
+    padding: 0.3rem;
+    background-color: yellow;
+    font-size: 2rem;
+
+}
+p{
+    font-family: outfit;
+
+}
+input,button{
+    padding: 1rem 2rem;
+}
+button{
+    font-family: bebas neue;
+    background-color: $spans-color;
+    border: none;
+    color: $text-color;
+}

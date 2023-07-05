@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mohave&display=swap");
+body {
+  background-color: #171717;
+  color: #EDEDED;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 7rem;
+}
+
+h1 {
+  font-family: bebas neue;
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: mohave;
+  font-weight: bold;
+  color: #171717;
+  padding: 0.3rem;
+  background-color: yellow;
+  font-size: 2rem;
+}
+
+p {
+  font-family: outfit;
+}
+
+input, button {
+  padding: 1rem 2rem;
+}
+
+button {
+  font-family: bebas neue;
+  background-color: #DA0037;
+  border: none;
+  color: #EDEDED;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mohave&display=swap");
+body {
+  background-color: #171717;
+}
+
+header {
+  width: 20vw;
+  height: 100vh;
+  background-color: #171717;
+  color: #EDEDED;
+  position: fixed;
+  overflow-y: scroll;
+}
+header #close {
+  display: none;
+}
+header .headerBrand {
+  text-align: center;
+  margin: 1rem 0;
+}
+header .headerBrand a {
+  text-decoration: none;
+  color: unset;
+}
+header .headerBrand p {
+  text-transform: uppercase;
+  font-family: "Homemade Apple", cursive;
+  font-size: 4rem;
+}
+header .menuItems {
+  font-family: bebas neue;
+  margin: 10rem 0;
+}
+header .menuItems a {
+  color: unset;
+  text-decoration: none;
+}
+header .menuItems ul {
+  padding: 0 2rem;
+  font-size: 1.5rem;
+}
+header .menuItems ul li {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0.3rem;
+  transition: 0.5s;
+}
+header .menuItems ul li span {
+  font-size: 1rem;
+}
+header .menuItems ul li ul a {
+  color: unset;
+  text-decoration: none;
+}
+header .menuItems ul li ul li:hover {
+  background-color: #444444;
+}
+header .menuItems ul li .content {
+  display: none;
+}
+header .menuItems ul li:hover {
+  background-color: #DA0037;
+  animation: headShake;
+  animation-duration: 1s;
+}
+header .socialMedia {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: -10px;
+}
+header .socialMedia a {
+  text-decoration: none;
+  color: unset;
+}
+
+main {
+  width: 80%;
+  float: right;
+}
+main .mainTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #EDEDED;
+  font-family: bebas neue;
+  letter-spacing: 2px;
+}
+main article {
+  text-align: center;
+  font-family: mohave;
+  font-size: 1.5rem;
+}
+main article p {
+  color: #EDEDED;
+  font-size: 1.2rem;
+  width: 65%;
+  margin: 1rem auto;
+}/*# sourceMappingURL=style.css.map */
