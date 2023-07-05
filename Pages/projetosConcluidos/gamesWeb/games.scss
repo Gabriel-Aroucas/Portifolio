@@ -140,29 +140,31 @@ main {
         //float: right;
         width: 80%;
         display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
         justify-items: center;
         margin: 30px auto;
+
         .card {
-           // width: 100%;
-           // margin: 3px;
-    
+            // width: 100%;
+            // margin: 3px;
+
             img {
                 width: 100%;
+                filter: brightness(40%);
             }
-    
+
             .content {
                 transform: translateY(-170%);
                 text-align: center;
                 color: $text-color;
                 text-shadow: 2px 2px 8px black;
-    
+
                 h2 {
                     font-size: 2rem;
                     letter-spacing: 1px;
                     font-family: 'Mohave', sans-serif;
                 }
-    
+
                 .alt {
                     p {
                         font-family: outfit;
@@ -170,15 +172,41 @@ main {
                     }
                 }
             }
-        }
-    
-        .card:hover {
-            transform: scale(102%, 102%);
-            transition: 1s;
-            cursor: pointer;
-        }
+
+            .buttons {
+                transform: translateY(-500%);
+
+                i {
+                    margin: 0 2px;
+                }
+
+                a {
+                    cursor: grabbing;
+                    padding: 0.7rem;
+                    text-decoration: none;
+                    color: $text-color;
+                }
+
+                a:nth-child(1) {
+                    background-color: $warning-color;
+                    color: $bg-color;
+                }
+
+                a:nth-child(2) {
+                    background-color: black;
+                }
+
+            }
+        
     }
-    
+
+    .card:hover {
+        transform: scale(102%, 102%);
+        transition: 1s;
+        cursor: pointer;
+    }
+}
+
 
 
 }
@@ -206,7 +234,8 @@ main {
             right: 50px;
         }
     }
-    main{
+
+    main {
         width: 100%;
         text-align: center;
     }

@@ -121,6 +121,7 @@ main .emphasisImages {
 }
 main .emphasisImages .card img {
   width: 100%;
+  filter: brightness(40%);
 }
 main .emphasisImages .card .content {
   transform: translateY(-170%);
@@ -136,6 +137,25 @@ main .emphasisImages .card .content h2 {
 main .emphasisImages .card .content .alt p {
   font-family: outfit;
   font-weight: bold;
+}
+main .emphasisImages .card .buttons {
+  transform: translateY(-500%);
+}
+main .emphasisImages .card .buttons i {
+  margin: 0 2px;
+}
+main .emphasisImages .card .buttons a {
+  cursor: grabbing;
+  padding: 0.7rem;
+  text-decoration: none;
+  color: #EDEDED;
+}
+main .emphasisImages .card .buttons a:nth-child(1) {
+  background-color: #FFD523;
+  color: #171717;
+}
+main .emphasisImages .card .buttons a:nth-child(2) {
+  background-color: black;
 }
 main .emphasisImages .card:hover {
   transform: scale(102%, 102%);
