@@ -121,6 +121,7 @@ main .emphasisImages {
 }
 main .emphasisImages .card img {
   width: 100%;
+  filter: brightness(20%);
 }
 main .emphasisImages .card .content {
   transform: translateY(-170%);
