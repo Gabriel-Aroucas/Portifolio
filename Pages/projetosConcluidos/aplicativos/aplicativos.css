@@ -1,1 +1,186 @@
-/*# sourceMappingURL=aplicativos.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mohave&display=swap");
+body {
+  background-color: #171717;
+}
+
+header {
+  width: 20vw;
+  height: 100vh;
+  background-color: #171717;
+  color: #EDEDED;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+header #close {
+  display: none;
+}
+header .headerBrand {
+  text-align: center;
+}
+header .headerBrand a {
+  text-decoration: none;
+  color: unset;
+}
+header .headerBrand p {
+  text-transform: uppercase;
+  font-family: "Homemade Apple", cursive;
+  font-size: 4rem;
+}
+header .menuItems {
+  font-family: bebas neue;
+  margin: 8rem 0;
+}
+header .menuItems a {
+  color: unset;
+  text-decoration: none;
+}
+header .menuItems ul {
+  padding: 0 2rem;
+  font-size: 1.5rem;
+}
+header .menuItems ul li {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0.3rem;
+  transition: 0.5s;
+}
+header .menuItems ul li span {
+  font-size: 1rem;
+}
+header .menuItems ul li ul a {
+  color: unset;
+  text-decoration: none;
+}
+header .menuItems ul li ul li:hover {
+  background-color: #444444;
+}
+header .menuItems ul li .content {
+  display: none;
+}
+header .menuItems ul li:hover {
+  background-color: #DA0037;
+  animation: headShake;
+  animation-duration: 1s;
+}
+header .socialMedia {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: -10px;
+}
+header .socialMedia ul li {
+  list-style: none;
+}
+header .socialMedia a {
+  text-decoration: none;
+  color: unset;
+}
+
+main {
+  width: 80%;
+  float: right;
+}
+main .mainTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: bebas neue;
+  letter-spacing: 2px;
+  color: #EDEDED;
+}
+main article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+main article mark {
+  font-size: 1.3rem;
+  font-family: bebas neue;
+  letter-spacing: 2px;
+}
+main article p {
+  font-family: mohave;
+  color: #EDEDED;
+  width: 65%;
+}
+main .emphasisImages {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-items: center;
+  margin: 30px auto;
+}
+main .emphasisImages .card img {
+  width: 100%;
+  filter: brightness(20%);
+}
+main .emphasisImages .card .content {
+  transform: translateY(-170%);
+  text-align: center;
+  color: #EDEDED;
+  text-shadow: 2px 2px 8px black;
+}
+main .emphasisImages .card .content h2 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-family: "Mohave", sans-serif;
+}
+main .emphasisImages .card .content .alt p {
+  font-family: outfit;
+  font-weight: bold;
+}
+main .emphasisImages .card .buttons {
+  transform: translateY(-500%);
+}
+main .emphasisImages .card .buttons i {
+  margin: 0 2px;
+}
+main .emphasisImages .card .buttons a {
+  cursor: grabbing;
+  padding: 0.7rem;
+  text-decoration: none;
+  color: #EDEDED;
+}
+main .emphasisImages .card .buttons a:nth-child(1) {
+  background-color: #FFD523;
+  color: #171717;
+}
+main .emphasisImages .card .buttons a:nth-child(2) {
+  background-color: black;
+}
+main .emphasisImages .card:hover {
+  transform: scale(102%, 102%);
+  transition: 1s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    top: 20px;
+    width: 100vw;
+    z-index: 2;
+    display: none;
+  }
+  header .headerBrand {
+    display: flex;
+    justify-content: center;
+  }
+  header #close {
+    display: block;
+    position: absolute;
+    right: 50px;
+  }
+  main {
+    width: 100%;
+    text-align: center;
+  }
+}/*# sourceMappingURL=aplicativos.css.map */
