@@ -19,3 +19,18 @@ projects.addEventListener('click', () => {
     }
   })
 
+
+  const data = new Date();
+  const atualYear = data.getFullYear()
+  const year = 1996;
+  const yearStartedTheStudy = 2021;
+  const calcAtualYear = atualYear - year
+  const calcYearOfStudy = atualYear - yearStartedTheStudy
+
+  let yearOld = document.querySelector("#yearOld");
+  let yearOld2 = document.querySelector("#yearOld2");
+  let yearOfStudy = document.querySelector("#yearOfStudy");
+
+  yearOfStudy.innerHTML = calcYearOfStudy
+  yearOld.innerHTML=calcAtualYear
+

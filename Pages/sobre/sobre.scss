@@ -122,6 +122,7 @@ main {
         @include flexCenter;
         flex-direction: column;
         text-align: center;
+        margin: 1rem 0;
 
         mark {
             font-size: 1.3rem;

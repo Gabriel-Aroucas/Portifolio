@@ -101,6 +101,7 @@ main article {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  margin: 1rem 0;
 }
 main article mark {
   font-size: 1.3rem;
